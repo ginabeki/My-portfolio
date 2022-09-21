@@ -79,7 +79,6 @@ img.shape-2 {
 }
 
 h1 {
-  font-family: "inherit";
   text-align: left;
   padding-top: 100px;
   margin-right: 90px;
@@ -96,7 +95,6 @@ p {
   color: #fff;
   outline: none;
   background: #1a2236;
-  font-family: "inherit";
   font-weight: bold;
   text-align: center;
   padding: 15px 55px;
