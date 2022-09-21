@@ -11,9 +11,9 @@ For the first milestone in the process of creating your portfolio website, you w
 
 - HTML & CSS
 
-## Live Demo (if available)
+## Live Demo
 
-- Not available
+- [Live link](https://ginabeki.github.io/My-portfolio/)
 
 ## Getting Started
 
