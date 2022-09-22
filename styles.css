@@ -6,68 +6,38 @@
   font-family: "Playfair Display", serif;
   font-size: 1rem;
 }
+.section-header {
+  height: 100vh;
+}
 
 nav {
   display: flex;
-}
-
-.logo {
-  position: absolute;
-  width: 111px;
-  height: 74px;
-  left: 0;
-  top: 0;
-}
-
-img.shape-1 {
-  position: absolute;
-  width: 74px;
-  height: 74px;
-  right: 37px;
-  top: 0;
-}
-
-img.shape-2 {
-  position: absolute;
-  width: 74px;
-  height: 74px;
-  right: 0;
-  top: 0;
+  justify-content: space-between;
 }
 
 .icon-menu {
-  position: absolute;
-  width: 20px;
-  height: 14px;
-  left: 330px;
-  top: 19px;
   background: #fff;
+  padding-right: 10px;
 }
 
 .rectangle-1 {
-  position: absolute;
   width: 20px;
   height: 2px;
-  left: 0;
-  top: 12px;
+  margin-top: 12px;
   background: #000;
 }
 
 .rectangle-2 {
-  position: absolute;
   width: 20px;
   height: 2px;
-  left: 0;
-  top: 6px;
+  margin-top: 6px;
   background: #000;
 }
 
 .rectangle-3 {
-  position: absolute;
   width: 20px;
   height: 2px;
-  left: 0;
-  top: 0;
+  margin-top: 5px;
   background: #000;
 }
 
@@ -79,15 +49,13 @@ img.shape-2 {
 }
 
 h1 {
-  text-align: left;
-  padding-top: 100px;
-  margin-right: 90px;
+  padding-top: 80px;
   font-size: 3.5rem;
   color: #1a2236;
 }
 
 p {
-  margin: 0 15px;
+  margin: 15px 15px;
   color: #1a2236;
 }
 
@@ -113,4 +81,17 @@ p {
   background-color: transparent;
   border: 2px solid #1a2236;
   color: #1a2236;
+}
+.section-image {
+  background-image: url("images/image-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 50px;
+  height: 255px;
+  width: 495px;
+  max-width: 100%;
+}
+
+.second {
+  
 }
