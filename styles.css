@@ -6,6 +6,7 @@
   font-family: "Playfair Display", serif;
   font-size: 1rem;
 }
+
 .section-header {
   height: 100vh;
 }
@@ -82,6 +83,7 @@ p {
   border: 2px solid #1a2236;
   color: #1a2236;
 }
+
 .section-image {
   background-image: url("images/image-1.png");
   background-repeat: no-repeat;
@@ -90,8 +92,4 @@ p {
   height: 255px;
   width: 495px;
   max-width: 100%;
-}
-
-.second {
-  
 }
