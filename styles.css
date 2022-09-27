@@ -300,3 +300,73 @@ textarea:focus {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+/* @media (min-width: 640px) {
+} */
+
+@media (min-width: 1024px) {
+  .logo {
+    display: none;
+  }
+  .icon-menu {
+    display: none;
+  }
+  .nav-bar {
+    display: flex;
+    margin: 15px auto;
+    padding-top: 20px;
+  }
+  .nav-link {
+    list-style: none;
+    padding-right: 20px;
+  }
+  .nav-link a {
+    text-decoration: none;
+    color: #1a2236;
+    font-size: 1rem;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+  }
+  .nav-link a:hover {
+    text-decoration: underline;
+    text-decoration-color: #1a2236;
+    text-decoration-thickness: 3px;
+  }
+  .section-image {
+    display: none;
+  }
+  .wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hero-text {
+    max-width: 484px;
+  }
+  h1 {
+    font-size: 6.8rem;
+    line-height: 110px;
+  }
+  p {
+    line-height: 21px;
+  }
+  .side {
+    background-image: url(images/image-geometry_1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+    height: 700px;
+  }
+  .button {
+    width: 70%;
+  }
+}
+/* @media (min-width: 768px) {
+}
+
+@media (min-width: 1280px) {
+}
+@media (min-width: 1536px) {
+} */
