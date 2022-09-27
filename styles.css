@@ -229,6 +229,7 @@ h3 {
   background-image: url("images/shape-1.png");
   background-repeat: no-repeat;
 }
+
 .form {
   display: flex;
   flex-direction: column;
@@ -263,9 +264,11 @@ textarea {
   font-family: "Poppins", serif;
   height: 145px;
 }
+
 textarea:active {
   border: 1px solid #1a2236;
 }
+
 textarea:focus {
   border: 1px solid #1a2236;
 }
