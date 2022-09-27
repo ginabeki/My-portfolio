@@ -223,3 +223,77 @@ h3 {
   right: 10px;
   margin-top: -46px;
 }
+
+.contact {
+  background-color: #f9f9fa;
+  background-image: url("images/shape-1.png");
+  background-repeat: no-repeat;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="text"],
+[type="email"] {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #1a2236;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  font-family: "Poppins", serif;
+  outline: none;
+}
+
+input[type="text"],
+[type="email"]:focus {
+  border: 1px solid #1a2236;
+}
+
+textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #1a2236;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  font-family: "Poppins", serif;
+  height: 145px;
+}
+textarea:active {
+  border: 1px solid #1a2236;
+}
+textarea:focus {
+  border: 1px solid #1a2236;
+}
+
+.footer {
+  background-color: #1a2236;
+  margin-top: 30px;
+}
+
+.resume {
+  color: #92dcdc;
+  font-family: "Poppins", serif;
+  font-size: 1.2rem;
+}
+
+.footer-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.company-icons {
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
