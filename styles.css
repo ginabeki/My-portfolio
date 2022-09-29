@@ -7,6 +7,10 @@
   font-size: 1rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .section-header {
   height: 100vh;
 }
@@ -20,7 +24,9 @@ nav {
   background: #fff;
   padding-right: 10px;
 }
-
+.nav-bar {
+  display: none;
+}
 .rectangle-1 {
   width: 20px;
   height: 2px;
@@ -48,19 +54,26 @@ nav {
   justify-content: space-around;
 }
 
-h1 {
-  padding-top: 80px;
-  font-size: 3.5rem;
-  color: #1a2236;
-  text-align: left;
-  margin-left: 20px;
-  font-weight: 500;
+.hero-text {
+  display: flex;
+  flex-direction: column;
 }
 
-p {
-  margin: 15px 15px;
+.header-name {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 50px;
   color: #1a2236;
-  font-size: 1.1rem;
+  margin: 106px 84px 16px 16px;
+}
+
+.header-text {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1a2236;
+  margin: 20px 16px 40px 16px;
 }
 
 .button {
@@ -75,6 +88,7 @@ p {
   margin-top: 50px;
   cursor: pointer;
   width: 90%;
+  margin: 20px 16px 40px 16px;
 }
 
 .button:hover {
@@ -90,11 +104,11 @@ p {
 }
 
 .section-image {
-  background-image: url("images/image-1.png");
+  /* background-image: url("images/image-1.png"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  position: relative;
+  margin: 40px 16px;
   height: 200px;
   width: 486px;
   max-width: 100%;
@@ -102,9 +116,16 @@ p {
 }
 
 .works {
-  margin-top: 20px;
+  padding-top: 150px;
+  width: 100%;
 }
-
+.rotate-text {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 50px;
+  color: #1a2236;
+  margin-left: 16px;
+}
 .card-wrap {
   margin-top: 30px;
   display: flex;
@@ -128,6 +149,28 @@ p {
   align-items: left;
 }
 
+.about-header {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  color: #1a2236;
+  margin-top: 56px;
+  margin-left: 16px;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1a2236;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 32px;
+}
+
 h2 {
   font-family: "Poppins", serif;
   font-weight: 300;
@@ -140,7 +183,6 @@ h2 {
   display: flex;
   list-style: none;
   align-items: center;
-  justify-content: space-around;
   margin-top: 10px;
 }
 
@@ -149,6 +191,7 @@ h2 {
   color: #1a2236;
   padding: 3px 5px;
   border: 1px solid #98dede;
+  margin-left: 20px;
 }
 
 .button-card {
@@ -162,7 +205,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 68%;
+  width: 72%;
   margin-left: 18px;
   margin-bottom: 18px;
   cursor: pointer;
@@ -230,6 +273,28 @@ h3 {
   background-repeat: no-repeat;
 }
 
+.contact-header {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 50px;
+  color: #1a2236;
+  padding-top: 30px;
+  margin-top: 106px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 32px;
+}
+.contact-text {
+  font-family: "Poppins", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1a2236;
+  margin-top: 30px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 20px;
+}
 .form {
   display: flex;
   flex-direction: column;
@@ -245,6 +310,7 @@ input[type="text"],
   border-radius: 4px;
   margin-top: 6px;
   margin-bottom: 16px;
+  margin-left: 16px;
   font-family: "Poppins", serif;
   outline: none;
 }
@@ -276,14 +342,18 @@ textarea:focus {
 .footer {
   background-color: #1a2236;
   margin-top: 30px;
+  padding: 20px 5px;
 }
 
 .resume {
-  color: #92dcdc;
+  color: #fff;
   font-family: "Poppins", serif;
   font-size: 1.2rem;
 }
 
+.download-icon {
+  margin-left: 20px;
+}
 .footer-wrap {
   display: flex;
   align-items: center;
@@ -296,15 +366,40 @@ textarea:focus {
 }
 
 .company-icons {
-  margin-left: 50px;
+  margin-left: 40px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* @media (min-width: 640px) {
-} */
+@media (min-width: 768px) {
+  .header-name {
+    font-size: 4.5rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  img.desktop-image {
+    width: 570px;
+    margin-left: 80px;
+  }
+  .works {
+    padding-top: 276px;
+    margin-top: 150px;
+  }
+  .photos {
+    width: 470px;
+    max-width: 100%;
+    height: auto;
+  }
+  #card-one {
+    padding-top: 50px;
+  }
+  .button-card {
+    width: 45%;
+  }
+}
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .logo {
     display: none;
   }
@@ -320,6 +415,18 @@ textarea:focus {
     list-style: none;
     padding-right: 20px;
   }
+  .nav-underline {
+    list-style: none;
+    padding-right: 20px;
+  }
+  .nav-underline a {
+    color: #1a2236;
+    font-size: 1rem;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    text-decoration-color: #1a2236;
+    text-decoration-thickness: 3px;
+  }
   .nav-link a {
     text-decoration: none;
     color: #1a2236;
@@ -332,41 +439,298 @@ textarea:focus {
     text-decoration-color: #1a2236;
     text-decoration-thickness: 3px;
   }
-  .section-image {
-    display: none;
-  }
+
   .wrap {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    position: relative;
+    /* align-items: center; */
   }
   .hero-text {
-    max-width: 484px;
+    margin-top: 22px;
+    margin-left: 160px;
+    margin-right: 94px;
+    margin-bottom: 292px;
   }
-  h1 {
-    font-size: 6.8rem;
-    line-height: 110px;
+  .header-name {
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 110px;
+    line-height: 100%;
+    color: #1a2236;
+    margin-bottom: 60px;
   }
-  p {
-    line-height: 21px;
+  .button-header {
+    align-self: flex-start;
+    width: 100%;
+    padding: 25px 34px;
   }
-  .side {
-    background-image: url(images/image-geometry_1.svg);
+  .pictures {
+    float: right;
+  }
+  .desktop-image {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 500px;
-    height: 700px;
+    width: 702px;
+    height: 877px;
   }
-  .button {
-    width: 70%;
+  .dots {
+    background-image: url(images/image_dots.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    margin-left: -69px;
+    top: 616px;
   }
-}
-/* @media (min-width: 768px) {
-}
+  .works {
+    margin-top: 425px;
+  }
+  .rotate-text {
+    position: absolute;
+    left: -39px;
+    top: 1276px;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 110px;
+    line-height: 100%;
+    color: #1a2236;
+    transform: rotate(-90deg);
+  }
 
-@media (min-width: 1280px) {
+  #card-one {
+    position: absolute;
+    width: 800px;
+    right: -9%;
+    top: 1095px;
+  }
+
+  .dots-two-wrap {
+    display: flex;
+    position: relative;
+  }
+  .dots-two-wrap img {
+    width: 800px;
+    height: 400px;
+  }
+  .dots-two {
+    background-image: url(images/image_dots.svg);
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin-left: -162px;
+  }
+  #text-two {
+    align-items: left;
+    top: -241px;
+    display: none;
+  }
+  #card-two img {
+    position: absolute;
+    width: 465px;
+    height: 270px;
+    left: 0px;
+    top: 1661px;
+  }
+  #card-three {
+    width: 800px;
+    height: 465px;
+    left: 0px;
+    top: 2095px;
+  }
+  #text-three {
+    display: none;
+  }
+  #card-three img {
+    width: 730px;
+    height: 420px;
+    left: 0px;
+    position: absolute;
+    top: 1926px;
+  }
+  #text-extra {
+    position: relative;
+    align-items: left;
+    top: -248px;
+  }
+  #card-four img {
+    position: absolute;
+    width: 465px;
+    height: 270px;
+    left: 727px;
+    top: 2342px;
+  }
+
+  #text-four {
+    display: none;
+  }
+  #card-five {
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    right: -7%;
+    top: 1625px;
+  }
+
+  #text-five .button-project {
+    padding: 22px 13px;
+    width: 56%;
+  }
+  .shapes {
+    background-image: url(images/image-geometry_2-1.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 430px;
+    height: 289px;
+    right: 473px;
+    top: -82px;
+  }
+  .square {
+    background-image: url(images/image-geometry_3.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 435px;
+    height: 187px;
+    right: 12px;
+    left: 89px;
+    margin-left: -54px;
+    top: 526px;
+  }
+  #card-six {
+    display: none;
+  }
+
+  /* About section */
+
+  .about {
+    margin-top: 800px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 80px;
+    height: 100vh;
+  }
+  .about-header {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 110px;
+    line-height: 100%;
+    color: #1a2236;
+  }
+  .details {
+    padding-left: 135px;
+  }
+  .cards {
+    width: 289px;
+    height: 289px;
+    position: relative;
+  }
+  .background-icon {
+    position: absolute;
+    left: 186px;
+    margin-top: -19px;
+  }
+  .background-frame {
+    position: absolute;
+    margin-top: -19px;
+    left: 191px;
+  }
+  .background-bulb {
+    position: absolute;
+    left: 188px;
+    margin-top: -41px;
+  }
+  .description {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    padding-left: 80px;
+  }
+  #box-1 {
+    margin-left: 21px;
+  }
+  #box-3 {
+    margin-top: -10px;
+    margin-left: 21px;
+  }
+  .dots-last {
+    background-image: url(images/image_dots_with_teal.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 222px;
+    height: 222px;
+    left: 481px;
+    margin-top: 325px;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  .lists li {
+    font-size: 0.9rem;
+  }
+  /* Contact section style */
+  .contact {
+    margin-top: 200px;
+  }
+  .contact-header {
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    text-align: center;
+    color: #1a2236;
+    margin-top: 168px;
+    margin-bottom: 40px;
+  }
+  .contact-text {
+    font-family: "Poppins", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #1a2236;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .input-details {
+    display: flex;
+    gap: 0.5%;
+    justify-content: center;
+    align-items: center;
+  }
+  input[type="text"],
+  [type="email"] {
+    width: 37%;
+  }
+  textarea {
+    width: 40%;
+  }
+  .button-contact {
+    width: 35%;
+    margin: 20px auto;
+  }
+  .resume {
+    color: #fff;
+  }
+
+  .download-icon {
+    margin-left: 20px;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+  }
 }
-@media (min-width: 1536px) {
-} */
