@@ -20,57 +20,80 @@
   </head>
   <body>
     <!-- =============Start Header Section===================== -->
-    <section class="section-header">
-      <header>
-        <nav>
-          <img class="logo" src="images/shape-1.png" alt="shape" />
-          <div class="icon-menu">
-            <div class="rectangle-1"></div>
-            <div class="rectangle-2"></div>
-            <div class="rectangle-3"></div>
-          </div>
-          <ul class="nav-bar">
-            <li class="nav-link">
-              <a href="">Home</a>
-            </li>
-            <li class="nav-link">
-              <a href="">Portfolio</a>
-            </li>
-            <li class="nav-link">
-              <a href="">About</a>
-            </li>
-            <li class="nav-link">
-              <a href="">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+
+    <header class="section-header">
+      <nav>
+        <img class="logo" src="images/shape-1.png" alt="shape" />
+        <div class="icon-menu">
+          <div class="rectangle-1"></div>
+          <div class="rectangle-2"></div>
+          <div class="rectangle-3"></div>
+        </div>
+        <ul class="nav-bar">
+          <li class="nav-underline">
+            <a href="#">Home</a>
+          </li>
+          <li class="nav-link">
+            <a href="">Portfolio</a>
+          </li>
+          <li class="nav-link">
+            <a href="">About</a>
+          </li>
+          <li class="nav-link">
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
       <div class="wrap">
         <div class="hero-text">
-          <h1>Gina<br />Beki</h1>
-          <p>
+          <h1 class="header-name">Gina<br />Beki</h1>
+          <p class="header-text">
             Hello! I am a software developer! I can help you build a product,
             feature, or website. Have a look at my work, and if you like what
             you see, and have a project you need help with, kindly contact me.
           </p>
-          <button class="button">Start Collaboration</button>
+          <button class="button button-header">Start Collaboration</button>
         </div>
-        <div class="side"></div>
-        <div class="section-image"></div>
+        <div class="pictures">
+          <picture>
+            <source
+              media="(max-width:992px)"
+              srcset="/images/mobile_header.png"
+              class="section-image"
+            />
+            <source
+              media="(min-width:992px)"
+              srcset="/images/desktop_header.svg"
+              class="desktop-image"
+            />
+            <img
+              src="/images/desktop_header.svg"
+              alt=""
+              class="desktop-image"
+            />
+          </picture>
+          <div class="dots"></div>
+        </div>
       </div>
-    </section>
+      <!-- <div class="section-image"></div> -->
+    </header>
     <!-- =============End Header Section===================== -->
     <!-- ======================== Start Works Section============= -->
     <section class="works">
-      <h1>Projects</h1>
+      <!-- <div class="section-image"></div> -->
+      <h1 class="rotate-text">Projects</h1>
       <div class="card-wrap">
-        <div class="card">
-          <img
-            class="photos"
-            src="images/card-1.png"
-            alt="Typing on the laptop"
-          />
-          <div class="text">
+        <div class="card" id="card-one">
+          <div class="dots-two-wrap">
+            <img
+              class="photos"
+              src="images/card-1.png"
+              alt="Typing on the laptop"
+            />
+            <div class="dots-two"></div>
+          </div>
+
+          <div class="text" id="text-extra">
             <h2>Project name goes here</h2>
             <ul class="list">
               <li class="sub-list">HTML/CSS</li>
@@ -83,13 +106,14 @@
             </button>
           </div>
         </div>
-        <div class="card">
+        <div class="card" id="card-two">
           <img
             class="photos"
             src="images/card-2.png"
             alt="Typing on the laptop"
           />
-          <div class="text">
+          <!-- <div class="dots-three"></div> -->
+          <div class="text" id="text-two">
             <h2>Project name goes here</h2>
             <ul class="list">
               <li class="sub-list">HTML/CSS</li>
@@ -102,13 +126,15 @@
             </button>
           </div>
         </div>
-        <div class="card">
+        <div class="card" id="card-three">
+          <!-- <div class="geometry-three"></div> -->
           <img
             class="photos"
             src="images/card-3.png"
             alt="Typing on the laptop"
           />
-          <div class="text">
+
+          <div class="text" id="text-three">
             <h2>Project name goes here</h2>
             <ul class="list">
               <li class="sub-list">HTML/CSS</li>
@@ -120,14 +146,16 @@
               <img class="img-btn" src="images/ic_arrow_right-1.svg" alt="" />
             </button>
           </div>
+          <!-- <div class="geometry-shape"></div> -->
         </div>
-        <div class="card">
+        <div class="card" id="card-four">
+          <!-- <div class="photos-four"></div> -->
           <img
             class="photos"
             src="images/card-4.png"
             alt="Typing on the laptop"
           />
-          <div class="text">
+          <div class="text" id="text-four">
             <h2>Project name goes here</h2>
             <ul class="list">
               <li class="sub-list">HTML/CSS</li>
@@ -140,32 +168,34 @@
             </button>
           </div>
         </div>
-        <div class="card">
+        <div class="card" id="card-five">
           <img
             class="photos"
             src="images/card-5.png"
             alt="Typing on the laptop"
           />
-          <div class="text">
+          <div class="shapes"></div>
+          <div class="square"></div>
+          <div class="text" id="text-five">
             <h2>Project name goes here</h2>
             <ul class="list">
               <li class="sub-list">HTML/CSS</li>
               <li class="sub-list">Ruby on Rails</li>
               <li class="sub-list">JavaScript</li>
             </ul>
-            <button class="button-card">
+            <button class="button-card button-project">
               See this Project
               <img class="img-btn" src="images/ic_arrow_right-1.svg" alt="" />
             </button>
           </div>
         </div>
-        <div class="card">
+        <div class="card" id="card-six">
           <img
             class="photos"
             src="images/card-6.png"
             alt="Typing on the laptop"
           />
-          <div class="text">
+          <div class="text" id="text-six">
             <h2>Project name goes here</h2>
             <ul class="list">
               <li class="sub-list">HTML/CSS</li>
@@ -184,8 +214,8 @@
     <!-- =============Start About Section===================== -->
     <section class="about">
       <div class="details">
-        <h1>About</h1>
-        <p>
+        <h1 class="about-header">About</h1>
+        <p class="about-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -193,7 +223,7 @@
         </p>
         <button class="button">
           Get my CV
-          <img class="img-btn" src="images/download.svg" alt="" />
+          <img class="img-btn" id="img-btn" src="images/download.svg" alt="" />
         </button>
       </div>
       <div class="description">
@@ -207,7 +237,11 @@
               <li>CSS</li>
             </ul>
           </div>
-          <img class="background" src="images/ic_languages.svg" alt="Shape" />
+          <img
+            class="background background-icon"
+            src="images/ic_languages.svg"
+            alt="Shape"
+          />
         </div>
         <div class="cards" id="box-2">
           <div class="skills">
@@ -221,7 +255,7 @@
             </ul>
           </div>
           <img
-            class="background"
+            class="background background-frame"
             src="images/ic_framework.svg"
             alt="Framework"
           />
@@ -238,37 +272,41 @@
             </ul>
           </div>
           <img
-            class="background"
+            class="background background-bulb"
             src="images/ic_skills.svg"
             alt="Bulb illustration"
           />
         </div>
+        <div class="dots-last"></div>
       </div>
     </section>
     <!-- =============End About Section===================== -->
     <!-- Form section -->
     <section class="contact">
-      <h1>Getting Started</h1>
-      <p>
+      <h1 class="contact-header">Get Started</h1>
+      <p class="contact-text">
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
       </p>
       <form class="form" method="POST" action="https://formspree.io/f/xvoyalyo">
-        <input
-          name="name"
-          type="text"
-          id="name"
-          placeholder="Your name"
-          maxlength="30"
-          required
-        />
-        <input
-          name="email"
-          type="email"
-          id="email"
-          placeholder="Your email"
-          required
-        />
+        <div class="input-details">
+          <input
+            name="name"
+            type="text"
+            id="name"
+            placeholder="Your name"
+            maxlength="30"
+            required
+          />
+          <input
+            name="email"
+            type="email"
+            id="email"
+            placeholder="Your email"
+            required
+          />
+        </div>
+
         <textarea
           name="comment"
           id="message"
@@ -276,43 +314,57 @@
           maxlength="500"
           required
         ></textarea>
-        <button class="button" type="submit">Start Collaboration</button>
+        <button class="button button-contact" type="submit">
+          Start Collaboration
+        </button>
       </form>
     </section>
-    <section class="footer">
-      <footer>
-        <div class="footer-wrap">
-          <p class="resume">Get my CV</p>
-          <a href="#"> <img src="images/Union.svg" alt="" /></a>
-        </div>
-        <div class="icons">
+    <!-- ===================Footer section===================== -->
+
+    <footer class="footer">
+      <div class="footer-wrap">
+        <p class="resume">Get my CV</p>
+        <a href="#">
+          <img class="download-icon" src="images/download.svg" alt=""
+        /></a>
+      </div>
+      <div class="icons">
+        <a href="#">
           <img
             class="company-icons"
             src="images/ic_stackoverflow.svg"
             alt="Stackoverflow logo"
           />
+        </a>
+        <a href="https://github.com/ginabeki">
           <img
             class="company-icons"
             src="images/ic_github.svg"
             alt="Github logo"
           />
+        </a>
+        <a href="#">
           <img
             class="company-icons"
             src="images/ic_twitter.svg"
             alt="Twitter logo"
           />
+        </a>
+        <a href="#">
           <img
             class="company-icons"
             src="images/ic_linkedin-1.svg"
             alt="Linkedin logo"
           />
+        </a>
+        <a href="#">
           <img
             class="company-icons"
             src="images/ic_angellist.svg"
             alt="Angelist logo"
           />
-        </div>
-      </footer>
-    </section>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
