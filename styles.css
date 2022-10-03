@@ -89,18 +89,24 @@ nav {
   cursor: pointer;
   font-size: 18px;
   margin: 50px 16px 40px 16px;
+  background: linear-gradient(to left, #1a2236 50%, #fff 50%);
+  background-position: right top;
+  background-size: 200% 100%;
+  transition: all ease 0.5s;
 }
 
 .button:hover {
   background-color: transparent;
   border: 1px solid #1a2236;
   color: #1a2236;
+  background-position: left top;
 }
 
 .button:focus {
   background-color: transparent;
   border: 2px solid #1a2236;
   color: #1a2236;
+  transition: all 0.5s ease-out;
 }
 
 .section-image {
