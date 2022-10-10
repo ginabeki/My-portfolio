@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Gina Beki Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,28 +21,29 @@
   <body>
     <!-- =============Start Header Section===================== -->
 
-    <header class="section-header">
+    <header class="section-header" id="home">
       <nav>
         <img class="logo" src="images/shape-1.png" alt="shape" />
-        <div class="icon-menu">
-          <div class="rectangle-1"></div>
-          <div class="rectangle-2"></div>
-          <div class="rectangle-3"></div>
-        </div>
-        <ul class="nav-bar">
+
+        <ul class="nav-menu" id="nav-background">
           <li class="nav-underline">
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li class="nav-link">
-            <a href="">Portfolio</a>
+            <a href="#works">Portfolio</a>
           </li>
           <li class="nav-link">
-            <a href="">About</a>
+            <a href="#about">About</a>
           </li>
           <li class="nav-link">
-            <a href="">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
       <div class="wrap">
         <div class="hero-text">
@@ -75,7 +76,7 @@
     </header>
     <!-- =============End Header Section===================== -->
     <!-- ======================== Start Works Section============= -->
-    <section class="works">
+    <section class="works" id="works">
       <!-- <div class="section-image"></div> -->
       <h1 class="rotate-text">Projects</h1>
       <div class="card-wrap">
@@ -84,7 +85,7 @@
             <img
               class="photos"
               src="images/card-1.png"
-              alt="Typing on the laptop"
+              alt="Hands typing on the laptop"
             />
             <div class="dots-two"></div>
           </div>
@@ -106,7 +107,7 @@
           <img
             class="photos"
             src="images/card-2.png"
-            alt="Typing on the laptop"
+            alt="Laptop screen background"
           />
           <!-- <div class="dots-three"></div> -->
           <div class="text" id="text-two">
@@ -124,11 +125,7 @@
         </div>
         <div class="card" id="card-three">
           <!-- <div class="geometry-three"></div> -->
-          <img
-            class="photos"
-            src="images/card-3.png"
-            alt="Typing on the laptop"
-          />
+          <img class="photos" src="images/card-3.png" alt="Laptop wallpaper" />
 
           <div class="text" id="text-three">
             <h2>Project name goes here</h2>
@@ -149,7 +146,7 @@
           <img
             class="photos"
             src="images/card-4.png"
-            alt="Typing on the laptop"
+            alt="Laptop with wallpaper"
           />
           <div class="text" id="text-four">
             <h2>Project name goes here</h2>
@@ -168,7 +165,7 @@
           <img
             class="photos"
             src="images/card-5.png"
-            alt="Typing on the laptop"
+            alt="Laptop on grey background"
           />
           <div class="shapes"></div>
           <div class="square"></div>
@@ -189,7 +186,7 @@
           <img
             class="photos"
             src="images/card-6.png"
-            alt="Typing on the laptop"
+            alt="Laptop on a white background"
           />
           <div class="text" id="text-six">
             <h2>Project name goes here</h2>
@@ -208,7 +205,7 @@
     </section>
     <!-- ======================== End Works Section============= -->
     <!-- =============Start About Section===================== -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="details">
         <h1 class="about-header">About</h1>
         <p class="about-text">
@@ -225,7 +222,7 @@
       <div class="description">
         <div class="cards" id="box-1">
           <div class="skills">
-            <h3>Languages</h3>
+            <h2 class="skills-heading">Languages</h2>
             <ul class="lists">
               <li>JavaScript(ES5/ES6)</li>
               <li>Ruby</li>
@@ -241,7 +238,7 @@
         </div>
         <div class="cards" id="box-2">
           <div class="skills">
-            <h3>Frameworks</h3>
+            <h2 class="skills-heading">Frameworks</h2>
             <ul class="lists">
               <li>BootStrap</li>
               <li>Ruby on Rails</li>
@@ -258,7 +255,7 @@
         </div>
         <div class="cards" id="box-3">
           <div class="skills">
-            <h3>Skills</h3>
+            <h2 class="skills-heading">Skills</h2>
             <ul class="lists">
               <li>Codekit</li>
               <li>Codepen</li>
@@ -278,7 +275,7 @@
     </section>
     <!-- =============End About Section===================== -->
     <!-- Form section -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="geometry-shapes"></div>
       <h1 class="contact-header">Get Started</h1>
       <p class="contact-text">
@@ -368,5 +365,6 @@
         </a>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
