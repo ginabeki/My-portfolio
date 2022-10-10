@@ -24,6 +24,7 @@ nav {
   background: #fff;
   padding-right: 21px;
   padding-top: 25px;
+  cursor: pointer;
 }
 
 #nav-background {
