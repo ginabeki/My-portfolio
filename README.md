@@ -13,7 +13,7 @@ For the first milestone in the process of creating your portfolio website, you w
 
 ## Live Demo
 
-- [Live link](https://ginabeki.github.io/My-portfolio/)
+- [Live link](https:)
 
 ## Getting Started
 
