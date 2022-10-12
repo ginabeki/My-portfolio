@@ -1,18 +1,18 @@
 const arrProject = [];
-for(let i = 0; i < 6; +i) {
-    arrProject.push({
-      name: 'Project name goes here',
-      projectDescription:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-      image: 'images/slider-1.svg',
-      githubIcon: 'images/ic-github.svg',
-      liveIcon: 'images/ic-live.svg',
-      technologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
-      sourceLink: 'https://github.com/ginabeki/My-portfolio',
-      liveLink: 'https://ginabeki.github.io/My-portfolio/',
-      previousArrow: 'Previous project',
-      nextArrow: 'Next project',
-    });
+for (let i = 0; i < 6; +i) {
+  arrProject.push({
+    name: 'Project name goes here',
+    projectDescription:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+    image: 'images/slider-1.svg',
+    githubIcon: 'images/ic-github.svg',
+    liveIcon: 'images/ic-live.svg',
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
+    sourceLink: 'https://github.com/ginabeki/My-portfolio',
+    liveLink: 'https://ginabeki.github.io/My-portfolio/',
+    previousArrow: 'Previous project',
+    nextArrow: 'Next project',
+  });
 }
 
 const popModal = document.getElementById('popModal');
