@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gina Beki Portfolio</title>
+    <link rel="stylesheet" href="modal.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,6 +17,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins:wght@200;400&family=Roboto+Slab:wght@400;700;900&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
   <body>
@@ -75,6 +80,9 @@
       <!-- <div class="section-image"></div> -->
     </header>
     <!-- =============End Header Section===================== -->
+    <!-- Modal window -->
+    <div id="popModal" class="modal"></div>
+    <!-- end modal -->
     <!-- ======================== Start Works Section============= -->
     <section class="works" id="works">
       <!-- <div class="section-image"></div> -->
@@ -97,7 +105,7 @@
               <li class="sub-list">Ruby on Rails</li>
               <li class="sub-list">JavaScript</li>
             </ul>
-            <button class="button-card">
+            <button class="button-card" onclick="projectsDetails(0)">
               See this Project
               <img class="img-btn" src="images/ic_arrow_right-1.svg" alt="" />
             </button>
@@ -117,7 +125,7 @@
               <li class="sub-list">Ruby on Rails</li>
               <li class="sub-list">JavaScript</li>
             </ul>
-            <button class="button-card">
+            <button class="button-card" onclick="projectsDetails(1)">
               See this Project
               <img class="img-btn" src="images/ic_arrow_right-1.svg" alt="" />
             </button>
@@ -134,15 +142,15 @@
               <li class="sub-list">Ruby on Rails</li>
               <li class="sub-list">JavaScript</li>
             </ul>
-            <button class="button-card">
+            <button class="button-card" onclick="projectsDetails(2)">
               See this Project
               <img class="img-btn" src="images/ic_arrow_right-1.svg" alt="" />
             </button>
           </div>
-          <!-- <div class="geometry-shape"></div> -->
+          
         </div>
         <div class="card" id="card-four">
-          <!-- <div class="photos-four"></div> -->
+          
           <img
             class="photos"
             src="images/card-4.png"
@@ -155,7 +163,7 @@
               <li class="sub-list">Ruby on Rails</li>
               <li class="sub-list">JavaScript</li>
             </ul>
-            <button class="button-card">
+            <button class="button-card" onclick="projectsDetails(3)">
               See this Project
               <img class="img-btn" src="images/ic_arrow_right-1.svg" alt="" />
             </button>
@@ -176,7 +184,10 @@
               <li class="sub-list">Ruby on Rails</li>
               <li class="sub-list">JavaScript</li>
             </ul>
-            <button class="button-card button-project">
+            <button
+              class="button-card button-project"
+              onclick="projectsDetails(4)"
+            >
               See this Project
               <img class="img-btn" src="images/ic_arrow_right-1.svg" alt="" />
             </button>
@@ -195,7 +206,7 @@
               <li class="sub-list">Ruby on Rails</li>
               <li class="sub-list">JavaScript</li>
             </ul>
-            <button class="button-card">
+            <button class="button-card" onclick="projectsDetails(5)">
               See this Project
               <img class="img-btn" src="images/ic_arrow_right-1.svg" alt="" />
             </button>
@@ -365,6 +376,8 @@
         </a>
       </div>
     </footer>
+
     <script src="script.js"></script>
+    <script src="modal.js"></script>
   </body>
 </html>
