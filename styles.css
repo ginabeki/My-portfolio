@@ -205,7 +205,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: left;
+  text-align: left;
 }
 
 .about-header {
@@ -275,7 +275,7 @@ h2 {
 .button-card:hover {
   background-color: #fff;
   color: #1a2236;
-  border-radius: 1px solid #1a2236;
+  border: 1px solid #1a2236;
 }
 
 .img-btn {
@@ -723,7 +723,7 @@ textarea:focus {
   }
 
   #text-two {
-    align-items: left;
+    text-align: left;
     top: -241px;
     display: none;
   }
@@ -757,7 +757,7 @@ textarea:focus {
 
   #text-extra {
     position: relative;
-    align-items: left;
+    text-align: left;
     top: -248px;
   }
 
