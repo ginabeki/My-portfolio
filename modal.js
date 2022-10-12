@@ -45,14 +45,14 @@ function projectsDetails(projectIndex) {
             </div>
         <div class="bg-image">
         <img class="desktop-img" src="${myProject.image}"/>
-         <a class="back" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="back" onclick="plusSlides(-1)">&#10094;</a>
   <a class="front" onclick="plusSlides(1)">&#10095;</a>
         </div>
         <div class="img-wrap">
-   <img class="slide-img" src="${myProject.image}"/>
-   <img class="slide-img" src="${myProject.image}"/>
-   <img class="slide-img" src="${myProject.image}"/>
-   <img class="slide-img" src="${myProject.image}"/>
+  <img class="slide-img" src="${myProject.image}"/>
+  <img class="slide-img" src="${myProject.image}"/>
+  <img class="slide-img" src="${myProject.image}"/>
+  <img class="slide-img" src="${myProject.image}"/>
 </div>
       </div>
             <p id="projectDescription">${myProject.projectDescription}</p>
