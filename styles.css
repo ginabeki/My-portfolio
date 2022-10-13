@@ -29,9 +29,7 @@ nav {
 }
 
 #nav-background {
-  background-image:
-    url(images/mobile-menu-1.svg),
-    url(images/mobile-img.svg),
+  background-image: url(images/mobile-menu-1.svg), url(images/mobile-img.svg),
     url(images/mobile_menu.svg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: left top, 80% 20%, center bottom;
@@ -136,7 +134,7 @@ nav {
   outline: none;
   font-weight: bold;
   text-align: center;
-  align-self: center;
+  width: 288px;
   padding: 15px 20px;
   border: 1px solid #1a2236;
   cursor: pointer;
@@ -340,6 +338,10 @@ h2 {
   background-color: #f9f9fa;
   background-image: url('images/shape-1.png');
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-header {
@@ -352,6 +354,7 @@ h2 {
   margin-left: 16px;
   margin-right: 16px;
   margin-bottom: 32px;
+  text-align: center;
 }
 
 .contact-text {
@@ -366,6 +369,14 @@ h2 {
   margin-bottom: 20px;
 }
 
+.input-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  flex-direction: column;
+}
+
 /* form validation */
 #error {
   margin-bottom: 20px;
@@ -374,13 +385,14 @@ h2 {
 .form {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 input[type='text'],
 [type='email'] {
-  width: 90%;
+  width: 288px;
+  height: 52px;
   padding: 12px;
   border: 1px solid #1a2236;
   border-radius: 4px;
@@ -397,12 +409,14 @@ input[type='text'],
 }
 
 textarea {
-  width: 90%;
+  width: 288px;
+  height: 112px;
   padding: 12px;
   border: 1px solid #1a2236;
   border-radius: 4px;
   margin-top: 6px;
   margin-bottom: 16px;
+  margin-left: 16px;
   font-family: 'Poppins', serif;
   height: 145px;
 }
