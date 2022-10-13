@@ -13,6 +13,7 @@ html {
 
 .section-header {
   height: 100vh;
+  margin-bottom: 300px;
 }
 
 nav {
@@ -28,9 +29,7 @@ nav {
 }
 
 #nav-background {
-  background-image:
-    url(images/mobile-menu-1.svg),
-    url(images/mobile-img.svg),
+  background-image: url(images/mobile-menu-1.svg), url(images/mobile-img.svg),
     url(images/mobile_menu.svg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: left top, 80% 20%, center bottom;
@@ -362,6 +361,10 @@ h2 {
   margin-top: 30px;
   margin-left: 16px;
   margin-right: 16px;
+  margin-bottom: 20px;
+}
+/* form validation */
+#error {
   margin-bottom: 20px;
 }
 
