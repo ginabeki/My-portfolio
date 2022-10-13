@@ -29,7 +29,9 @@ nav {
 }
 
 #nav-background {
-  background-image: url(images/mobile-menu-1.svg), url(images/mobile-img.svg),
+  background-image:
+    url(images/mobile-menu-1.svg),
+    url(images/mobile-img.svg),
     url(images/mobile_menu.svg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: left top, 80% 20%, center bottom;
@@ -418,7 +420,6 @@ textarea {
   margin-bottom: 16px;
   margin-left: 16px;
   font-family: 'Poppins', serif;
-  height: 145px;
 }
 
 textarea:active {
