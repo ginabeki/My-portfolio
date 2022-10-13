@@ -25,5 +25,8 @@ function validateEmail() {
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  validateEmail();
+  const emailValid = validateEmail();
+  if (emailValid) {
+    form.submit();
+  }
 });
