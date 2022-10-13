@@ -292,7 +292,13 @@
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat.
       </p>
-      <form class="form" method="POST" action="https://formspree.io/f/xvoyalyo">
+
+      <form
+        class="form"
+        id="form"
+        method="POST"
+        action="https://formspree.io/f/xvoyalyo"
+      >
         <div class="input-details">
           <input
             name="name"
@@ -321,6 +327,7 @@
         <button class="button button-contact" type="submit">
           Start Collaboration
         </button>
+        <small id="error"></small>
       </form>
     </section>
     <!-- ===================Footer section===================== -->
@@ -375,6 +382,7 @@
     </footer>
 
     <script src="modal.js"></script>
+    <script src="form-validation.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
