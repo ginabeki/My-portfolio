@@ -11,6 +11,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  width: 100%;
+}
+
 .section-header {
   height: 100vh;
   margin-bottom: 300px;
@@ -572,7 +576,7 @@ textarea:focus {
   }
 
   .photos {
-    width: 470px;
+    width: 430px;
     max-width: 100%;
     height: auto;
   }
@@ -583,6 +587,10 @@ textarea:focus {
 }
 
 @media (min-width: 992px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .logo {
     display: none;
   }
@@ -651,13 +659,12 @@ textarea:focus {
     display: flex;
     position: fixed;
     background: none;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 1);
   }
 
   .wrap {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     position: relative;
   }
 
@@ -708,13 +715,13 @@ textarea:focus {
   }
 
   .works {
-    margin-top: 425px;
+    position: relative;
   }
 
   .rotate-text {
     position: absolute;
-    left: -39px;
-    top: 1276px;
+    left: -80px;
+    top: 258px;
     font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: 400;
@@ -733,12 +740,14 @@ textarea:focus {
 
   .dots-two-wrap {
     display: flex;
-    position: relative;
+    position: absolute;
+    right: 120px;
+    top: -976px;
   }
 
   .dots-two-wrap img {
-    width: 800px;
-    height: 400px;
+    width: 554px;
+    height: 330px;
   }
 
   .dots-two {
@@ -760,7 +769,7 @@ textarea:focus {
     width: 465px;
     height: 270px;
     left: 0;
-    top: 1661px;
+    bottom: -492px;
   }
 
   #card-three {
@@ -775,25 +784,28 @@ textarea:focus {
   }
 
   #card-three img {
-    width: 730px;
-    height: 420px;
+    width: 700px;
+    height: 400px;
     left: 0;
     position: absolute;
-    top: 1926px;
+    top: 1260px;
   }
 
   #text-extra {
-    position: relative;
-    text-align: left;
-    top: -248px;
+    position: absolute;
+    right: 120px;
+    top: -865px;
+    width: 555px;
   }
 
   #card-four img {
     position: absolute;
-    width: 465px;
-    height: 270px;
-    left: 727px;
-    top: 2342px;
+    width: 410px;
+    height: 240px;
+    /* left: 727px; */
+    top: 1658px;
+    right: 250px;
+   
   }
 
   #text-four {
@@ -804,8 +816,8 @@ textarea:focus {
     display: flex;
     flex-direction: column-reverse;
     position: absolute;
-    right: -7%;
-    top: 1625px;
+    right: -50px;
+    top: 555px;
   }
 
   #text-five .button-project {
@@ -818,9 +830,9 @@ textarea:focus {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 430px;
-    height: 289px;
-    right: 473px;
+    width: 360px;
+    height: 250px;
+    right: 431px;
     top: -82px;
   }
 
@@ -834,7 +846,7 @@ textarea:focus {
     height: 187px;
     right: 65px;
     margin-left: -54px;
-    top: 519px;
+    top: 495px;
   }
 
   #card-six {
@@ -844,11 +856,11 @@ textarea:focus {
   /* About section */
 
   .about {
-    margin-top: 800px;
+    margin-top: 1250px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding-top: 80px;
+    padding-ttop: 80px;
     height: 100vh;
   }
 
