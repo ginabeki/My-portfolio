@@ -619,6 +619,9 @@ textarea:focus {
   .nav-underline {
     list-style: none;
     padding-right: 20px;
+    text-decoration: underline;
+    text-decoration-color: #1a2236;
+    text-decoration-thickness: 3px;
   }
 
   .nav-underline a {
@@ -645,7 +648,10 @@ textarea:focus {
   }
 
   #nav-background {
-    display: none;
+    display: flex;
+    position: fixed;
+    background: none;
+    background-color: white;
   }
 
   .wrap {
@@ -887,6 +893,7 @@ textarea:focus {
     display: grid;
     grid-template-columns: 300px 300px;
     padding-left: 80px;
+    position: relative;
   }
 
   #box-1 {
@@ -906,8 +913,8 @@ textarea:focus {
     position: absolute;
     width: 222px;
     height: 222px;
-    left: 481px;
-    margin-top: 325px;
+    bottom: 0;
+    right: 0;
   }
 
   .skills-heading {
