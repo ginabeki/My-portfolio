@@ -53,108 +53,100 @@
       </nav>
       <div class="wrap">
         <div class="hero-text">
-          <h1 class="header-name">Gina<br />Beki</h1>
+          <h1 class="header-name">Hi,<br />I'm Gina</h1>
           <p class="header-text">
-            Hello! I am a software developer! I can help you build a product,
-            feature, or website. Have a look at my work, and if you like what
-            you see, and have a project you need help with, kindly contact me.
+            A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product
           </p>
-          <button class="button button-header">Start Collaboration</button>
+          <a class="btn-a" href="#contact"><button class="button button-header">
+Contact me !</button></a>
         </div>
         <div class="pictures">
-          <picture>
-            <source
-              media="(max-width:992px)"
-              srcset="images/mobile_header.png"
-              class="section-image"
-            />
-            <source
-              media="(min-width:992px)"
-              srcset="images/desktop_header.svg"
-              class="desktop-image"
-            />
+           <img class="mobile-img" src="images/mobile_header.png" alt="">
             <img src="images/desktop_header.svg" alt="" class="desktop-image" />
           </picture>
           <div class="dots"></div>
         </div>
       </div>
-      <!-- <div class="section-image"></div> -->
     </header>
     <!-- =============End Header Section===================== -->
 
     <!-- ======================== Start Works Section============= -->
-    <section class="works" id="works">
+    <section class="works reveal" id="works">
       <!-- <div class="section-image"></div> -->
       <h1 class="rotate-text">Projects</h1>
       <div class="card-wrap">
         <div class="card" id="card-one">
           <div class="dots-two-wrap">
             <img
-              class="photos"
-              src="images/card-1.png"
-              alt="Hands typing on the laptop"
+              class="photos img"
+              src="images/artsy.png"
+              alt="Conference website landing page"
             />
             <div class="dots-two"></div>
           </div>
 
           <div class="text" id="text-extra">
-            <h2>Project name goes here</h2>
+            <h2>Conference Website</h2>
             <ul class="list">
-              <li class="sub-list">HTML/CSS</li>
-              <li class="sub-list">Ruby on Rails</li>
+              <li class="sub-list">HTML5</li>
+              <li class="sub-list">CSS3</li>
               <li class="sub-list">JavaScript</li>
             </ul>
             <button class="button-card" onclick="projectsDetails(0)">
               See this Project
+              
               <img class="img-btn" src="images/ic_arrow_right-1.svg" alt="" />
             </button>
           </div>
         </div>
         <div class="card" id="card-two">
           <img
-            class="photos"
-            src="images/card-2.png"
-            alt="Laptop screen background"
+            class="photos display"
+            src="images/library.png"
+            alt="Awesome books landing page"
           />
           <!-- <div class="dots-three"></div> -->
           <div class="text" id="text-two">
-            <h2>Project name goes here</h2>
+            <h2>Awesome books SPA</h2>
             <ul class="list">
-              <li class="sub-list">HTML/CSS</li>
-              <li class="sub-list">Ruby on Rails</li>
+              <li class="sub-list">HTML5</li>
+              <li class="sub-list">CSS3</li>
               <li class="sub-list">JavaScript</li>
             </ul>
             <button class="button-card" onclick="projectsDetails(1)">
-              See this Project
+             See this Project           
               <img class="img-btn" src="images/ic_arrow_right-1.svg" alt="" />
             </button>
           </div>
         </div>
         <div class="card" id="card-three">
           <!-- <div class="geometry-three"></div> -->
-          <img class="photos" src="images/card-3.png" alt="Laptop wallpaper" />
+          <img class="photos display" src="images/todo.png" alt="Todo list" />
+          
 
           <div class="text" id="text-three">
-            <h2>Project name goes here</h2>
+            <h2>To Do List</h2>
             <ul class="list">
               <li class="sub-list">HTML/CSS</li>
-              <li class="sub-list">Ruby on Rails</li>
+              <li class="sub-list">Webpack</li>
               <li class="sub-list">JavaScript</li>
             </ul>
             <button class="button-card" onclick="projectsDetails(2)">
-              See this Project
+              See this Project         
               <img class="img-btn" src="images/ic_arrow_right-1.svg" alt="" />
             </button>
           </div>
+          <div class="shapes"></div>
+          <div class="square"></div>
         </div>
         <div class="card" id="card-four">
           <img
             class="photos"
-            src="images/card-4.png"
-            alt="Laptop with wallpaper"
+            src="images/landing.png"
+            alt="Landing page"
           />
           <div class="text" id="text-four">
-            <h2>Project name goes here</h2>
+            <h2>Landing page</h2>
             <ul class="list">
               <li class="sub-list">HTML/CSS</li>
               <li class="sub-list">Ruby on Rails</li>
@@ -172,8 +164,6 @@
             src="images/card-5.png"
             alt="Laptop on grey background"
           />
-          <div class="shapes"></div>
-          <div class="square"></div>
           <div class="text" id="text-five">
             <h2>Project name goes here</h2>
             <ul class="list">
@@ -210,17 +200,15 @@
           </div>
         </div>
       </div>
+      </div>
     </section>
     <!-- ======================== End Works Section============= -->
     <!-- =============Start About Section===================== -->
-    <section class="about" id="about">
+    <section class="about reveal" id="about">
       <div class="details">
         <h1 class="about-header">About</h1>
         <p class="about-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ea eiusmod
+          Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology
         </p>
         <button class="button">
           Get my CV
@@ -283,14 +271,11 @@
     </section>
     <!-- =============End About Section===================== -->
     <!-- Form section -->
-    <section class="contact" id="contact">
+    <section class="contact reveal" id="contact">
       <div class="geometry-shapes"></div>
-      <h1 class="contact-header">Get Started</h1>
+      <h2 class="contact-header">Let's connect</h2>
       <p class="contact-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+        Feel free to Contact me by submitting the form below and I will get back to you as soon as possible
       </p>
 
       <form
@@ -325,7 +310,7 @@
           required
         ></textarea>
         <button class="button button-contact" type="submit">
-          Start Collaboration
+          Contact me !
         </button>
         <small id="error"></small>
       </form>
