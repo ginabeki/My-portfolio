@@ -150,8 +150,7 @@ nav {
   outline: none;
   font-weight: bold;
   text-align: center;
-  width: 100%;
-  padding: 15px 20px;
+  padding: 15px 30px;
   border: 1px solid #1a2236;
   cursor: pointer;
   font-size: 18px;
@@ -178,6 +177,11 @@ nav {
   border: 2px solid #1a2236;
   color: #1a2236;
   transition: all 0.5s ease-out;
+}
+
+.mobile-img {
+  width: 375px;
+  margin: 20px 16px;
 }
 
 .desktop-image {
@@ -208,7 +212,7 @@ nav {
 }
 
 .works {
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 .rotate-text {
