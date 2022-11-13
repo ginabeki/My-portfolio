@@ -626,13 +626,6 @@ textarea:focus {
   }
 }
 
-@media (min-width: 25rem) {
-  .section-header {
-    margin-bottom: 5px;
-  }
-
-}
-
 @media (min-width: 48rem) {
   body {
     overflow-x: hidden;
