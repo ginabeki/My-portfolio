@@ -161,9 +161,6 @@ nav {
   font-size: 18px;
   margin-bottom: 20px;
   align-self: center;
-  /* margin-bottom: 20px;
-  margin-right: 16px;
-  margin-left: 16px; */
   background: linear-gradient(to left, #1a2236 50%, #fff 50%);
   background-position: right top;
   background-size: 200% 100%;
@@ -200,9 +197,9 @@ nav {
   display: none;
 }
 
-.works {
+/* .works {
   margin-top: 50px;
-}
+} */
 
 .reveal{
   position: relative;
