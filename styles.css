@@ -187,16 +187,13 @@ nav {
 
 .mobile-img {
   width: 100%;
+  height: auto;
   margin: 30px 0;
 }
 
 .desktop-image {
   display: none;
 }
-
-/* .works {
-  margin-top: 50px;
-} */
 
 .reveal{
   position: relative;
@@ -764,11 +761,12 @@ textarea:focus {
     width: 175px;
     height: 175px;
     margin-left: 87px;
-    top: 395px;
+    top: 478px;
   }
 
   .works {
     position: relative;
+    margin-top: 300px;
   }
 
   .rotate-text {
