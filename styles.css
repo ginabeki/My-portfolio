@@ -24,6 +24,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-bottom: 50px;
   /* margin-bottom: 300px; */
 }
 
@@ -148,6 +149,7 @@ nav {
 .button {
   color: #fff;
   outline: none;
+  width: 100%;
   font-weight: bold;
   text-align: center;
   padding: 15px 30px;
@@ -180,23 +182,16 @@ nav {
 }
 
 .mobile-img {
-  width: 375px;
-  margin: 20px 16px;
+  width: 100%;
+  margin: 30px 16px;
 }
 
 .desktop-image {
   display: none;
 }
 
-.section-image {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin: 40px 16px;
-  height: 200px;
-  width: 486px;
-  max-width: 100%;
-  top: 50px;
+.works {
+  margin-top: 50px;
 }
 
 .reveal{
@@ -209,10 +204,6 @@ nav {
 .reveal.active{
   transform: translateY(0);
   opacity: 1;
-}
-
-.works {
-  margin-top: 50px;
 }
 
 .rotate-text {
@@ -232,11 +223,22 @@ nav {
   justify-content: center;
 }
 
+.card {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(0.9);
+}
+
 .photos {
   width: 375px;
   max-width: 100%;
   height: auto;
+  cursor: pointer;
 }
+
 
 .text {
   background-color: #1a2236;
@@ -349,6 +351,12 @@ h2 {
   font-weight: bold;
   margin: 10px 10px;
   padding: 50px 0;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+.cards:hover { 
+  transform: scale(0.9); 
 }
 
 #box-1 {
@@ -514,6 +522,11 @@ textarea:focus {
   margin-left: 40px;
   margin-top: 20px;
   margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.company-icons:hover {
+  transform: scale(1.1);
 }
 
 .modal-head {
