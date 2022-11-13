@@ -272,7 +272,10 @@ nav {
 }
 
 .button.cv {
-  margin: 20px 16px;
+  margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: block;
 }
 
 h2 {
