@@ -160,9 +160,10 @@ nav {
   border: 1px solid #1a2236;
   cursor: pointer;
   font-size: 18px;
-  margin-bottom: 20px;
+  margin: 0 auto;
+  /* margin-bottom: 20px;
   margin-right: 16px;
-  margin-left: 16px;
+  margin-left: 16px; */
   background: linear-gradient(to left, #1a2236 50%, #fff 50%);
   background-position: right top;
   background-size: 200% 100%;
