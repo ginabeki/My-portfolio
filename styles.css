@@ -27,9 +27,7 @@ a {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-bottom: 50px;
-  /* margin-bottom: 300px; */
+  margin-bottom: 40px;
 }
 
 nav {
@@ -124,13 +122,13 @@ nav {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 50px 16px 40px 16px;
 }
 
 .hero-text {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin: 50px 16px 0 16px;
 }
 
 .header-name {
@@ -195,7 +193,7 @@ nav {
 
 .mobile-img {
   width: 100%;
-  margin: 30px 16px;
+  margin: 30px 0;
 }
 
 .desktop-image {
